@@ -23,8 +23,13 @@
    
    <script>
   
-  if( screen.width <= 991 ) {
+  var width = 991;
+    
+  if( screen.width <= width ) {
     location.href = '/mobile';
+   
+  if( screen.height <= screen.width*2 ) {
+    location.href = '/5budget';
 }
 
 </script>
