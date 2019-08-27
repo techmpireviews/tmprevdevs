@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>KLHS</title>
+    <link rel="icon" href="nointernetimg2.gif" type="image/x-icon">
+    <script>
+        if(navigator.onLine == false) {
+        location.href = 'file:///android_asset/nointernet.html';
+        }
+    </script>
+</head>
+<style>
+   body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+  }
+
+
+ #homep {
+ margin-top: 0px;
+ border: solid 1.5px;
+ border-color: transparent;
+ background-color: #ffffff;
+ border-bottom-color: #000000;
+ border-top-color: #000000;
+ padding-bottom: 2px;
+ padding-top: 2px;
+ border-width: 100%;
+ font-size: 145%;
+ font-weight: bold;
+ }
+
+  #divimg2 {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 3.5px;
+  z-index: 10;
+  }
+
+#klhsimg1 {
+position: absolute;
+width: 80px;
+height: 80px;
+border-radius: 18px;
+top: 135px;
+left: 5px;
+}
+
+#playicon {
+width: 25px;
+height: auto;
+}
+
+#playiconbutton {
+position: fixed;
+top: 140px;
+left: 120px;
+background-color: #ffffff;
+box-shadow: none;
+border-color: transparent;
+}
+
+#pauseicon {
+width: 25px;
+height: auto;
+}
+
+#pauseiconbutton {
+position: fixed;
+top: 140px;
+left: 165px;
+background-color: #ffffff;
+box-shadow: none;
+border-color: transparent;
+}
+
+#klhsp {
+position: fixed;
+top: 185px;
+left: 128px;
+font-size: 110%;
+font-family: sans-serif;
+color: #000000;
+}
+
+  #divimg3 {
+  position: absolute;
+  top: 227px;
+  width: 100%;
+  height: 3.5px;
+  z-index: 10;
+  }
+
+ #homep {
+ margin-top: 0px;
+ border: solid 1.5px;
+ border-color: transparent;
+ background-color: #ffffff;
+ border-bottom-color: #000000;
+ border-top-color: #000000;
+ padding-bottom: 2px;
+ padding-top: 2px;
+ border-width: 100%;
+ font-size: 145%;
+ font-weight: bold;
+ }
+
+
+#klhsimg2 {
+position: absolute;
+width: 80px;
+height: 80px;
+border-radius: 60px;
+top: 535px;
+left: 7px;
+}
+
+#playicon2 {
+width: 25px;
+height: auto;
+}
+
+#playiconbutton2 {
+position: fixed;
+top: 540px;
+left: 120px;
+background-color: #ffffff;
+box-shadow: none;
+border-color: transparent;
+}
+
+#pauseicon2 {
+width: 25px;
+height: auto;
+}
+
+#pauseiconbutton2 {
+position: fixed;
+top: 540px;
+left: 165px;
+background-color: #ffffff;
+box-shadow: none;
+border-color: transparent;
+}
+
+#klhsp2 {
+position: fixed;
+top: 585px;
+left: 128px;
+font-size: 110%;
+font-family: sans-serif;
+color: #000000;
+}
+
+  #divimg4 {
+  position: absolute;
+  top: 520px;
+  width: 100%;
+  height: 3.5px;
+  z-index: 10;
+  }
+
+  #divimg5 {
+  position: absolute;
+  top: 627px;
+  width: 100%;
+  height: 3.5px;
+  z-index: 10;
+  }
+
+  #imghome1 {
+  position: absolute;
+  top: 290px;
+  width: 100%;
+  height: auto;
+  left: 0%;
+  z-index: -2;
+  }
+
+
+ </style>
+<body>
+<audio id="klhsaudio">
+    <source src="https://ice10.securenetsystems.net/KLHS?playSessionID=ECE0C2F5-FBA6-7E28-D207B2E33E125379" type="audio/ogg">
+</audio>
+<script>
+    var klhsaudio = document.getElementById("klhsaudio");
+
+    function klhsPlay() {
+    klhsaudio.play();
+    }
+
+    function klhsPause() {
+    klhsaudio.pause();
+    }
+</script>
+
+<center><p id="homep">Home</p></center>
+
+<img id="divimg2" src="https://i.pinimg.com/originals/d3/02/23/d30223cec79795bb91457a680dbf5bee.png">
+
+
+<div class="klhsradio">
+    <img id="klhsimg1" src="klhsicon.png">
+    <button id="playiconbutton" onclick="klhsPlay()" type="button"><img id="playicon" src="play.png"></button>
+    <button id="pauseiconbutton" onclick="klhsPause()" type="button"><img id="pauseicon" src="pause.png"></button>
+    <br>
+    <p id="klhsp">AM 1620 KLHS Radio</p>
+</div>
+
+<audio id="klhsaudio2">
+    <source src="https:\/\/klps.out.airtime.pro\/klps_a" type="audio/ogg">
+</audio>
+<script>
+    var klpsaudio = document.getElementById("klhsaudio2");
+
+    function klpsPlay() {
+    klpsaudio.play();
+    }
+
+    function klpsPause() {
+    klpsaudio.pause();
+    }
+</script>
+
+<img id="divimg3" src="https://i.pinimg.com/originals/d3/02/23/d30223cec79795bb91457a680dbf5bee.png">
+
+<img id="imghome1" src="klhsappimg.gif">
+
+<img id="divimg4" src="https://i.pinimg.com/originals/d3/02/23/d30223cec79795bb91457a680dbf5bee.png">
+
+<div class="klhsradio">
+    <img id="klhsimg2" src="https://klps.airtime.pro/images/cover-art.png">
+    <button id="playiconbutton2" onclick="klpsPlay()" type="button"><img id="playicon2" src="play.png"></button>
+    <button id="pauseiconbutton2" onclick="klpsPause()" type="button"><img id="pauseicon2" src="pause.png"></button>
+    <br>
+    <p id="klhsp2">KLPS Radio</p>
+</div>
+
+<img id="divimg5" src="https://i.pinimg.com/originals/d3/02/23/d30223cec79795bb91457a680dbf5bee.png">
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
